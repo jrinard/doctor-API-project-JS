@@ -9,25 +9,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Doctor Finder <span class ="blue2">Portland</span></h1>
-
-      </div>
-      <div class="box pull-right">
-      <h3>Enter Medical Issue</h3>
-      <input id="userInput" type="text" class="form-control"><br>
-      <button class="btn white" id="input-button">Go!</button><br>
-      </div>
-
-      <div class="welcome-box">
-      <h3>Welcome</h3>
-      <p>Doctor Finder Portland helps you find 20 doctors in the Portland area based on your medical issue.</p>
-      </div>
-
-      <div id="result" class="box-clear">
-        <ul></ul>
-      </div><br>
-
-    </div>
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Doctor Finder <span class ="blue2">Portland</span></h1>
+        </div>
+      </div><!-- row end -->
+      <div class="row">
+        <div class="col md 6">
+          <div class="box pull-right">
+            <h3>Enter Medical Issue or Name</h3>
+            <input id="userInput" type="text" class="form-control" placeholder="surgeon, toothache, etc"><br>
+            <button class="btn white" id="input-button">Search</button><br>
+          </div>
+        </div><!-- col end -->
+        <div class="col md 6">
+          <div class="welcome-box">
+            <h3>Welcome</h3>
+            <p>Doctor Finder Portland helps you find 20 doctors in the Portland area based on your medical issue.</p>
+          </div>
+        </div><!-- col end -->
+        </div><!-- row end -->
+      <div class="row">
+        <div class="col md 12">
+          <div id="result" class="box-clear">
+            <ul></ul>
+          </div><br>
+          <div id="footer">
+            <span class="copyright">&copy; All rights reserved by Joshua Rinard</span>
+          </div>
+        </div><!-- col end -->
+      </div><!-- row end -->
+    </div>  <!-- con end -->
   </body>
 </html>

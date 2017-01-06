@@ -1,4 +1,3 @@
-
 $gray : #d3d3d3;
 $white : #fff;
 $blue : #0C78B9;;
@@ -13,41 +12,39 @@ $blue : #0C78B9;;
 .white {
   color: $white;
 }
-
 .box {
   background: $gray;
   border: 3px solid black thin;
   padding: 10px 45px 20px 45px;
   border-radius: 15px;
-  width: 600px;
+  width: 49%;
 }
 .welcome-box {
   background: $gray;
   border: 3px solid black thin;
   padding: 10px 45px 44px 45px;
   border-radius: 15px;
-  width: 360px;
+  width: 49%;
+  min-height: 190px;
+  max-height: 300px;
 }
 .welcome-box p {
   color: #333;
   font-size: 1em;
 }
-
 .box-clear {
   border: 3px solid black thin;
   border-radius: 15px;
   margin-top: 15px;
 }
-
 .doc-box {
   height: 310px;
-  width: 313px;
+  width: 323px;
   background-color: $white;
   border-radius: 15px;
   padding:10px;
   margin: 5px;
 }
-
 .doc-image {
   display: block;
   margin: 0 auto;
@@ -56,8 +53,17 @@ $blue : #0C78B9;;
   float: left;
   margin-right: 10px;
 }
-
-
+.doc-box-error {
+  height: 50px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 15px;
+  padding:10px;
+  margin: 5px;
+}
+.center {
+  text-align: center;
+}
 * {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -69,12 +75,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .container {
   max-width: 1000px;
   margin-top: 80px;
 }
-
 h1{
   color: #fff;
   font-family: 'Julius Sans One', sans-serif;
@@ -84,17 +88,14 @@ h3 {
   color: #0C78B9;
   font-family: 'Raleway', sans-serif;
 }
-
 h4 {
   color: #665;
   font-family: 'Raleway', sans-serif;
 }
-
 h5 {
   color: #665;
   font-family: 'Julius Sans One', sans-serif;
 }
-
 hr {
   border-color: #999;
 }
@@ -107,15 +108,17 @@ span.h3 {
   border-radius: 10px 10px 10px;
   margin-bottom: 15px;
 }
-
 li {
   list-style-type: none;
 }
-
-
-
-
-
+#footer {
+  text-align: center;
+  margin-bottom: 20px;
+  clear: both;
+}
+.copyright {
+  color: #d2d2d2;
+}
 /*Alters Focus on button and input*/
 button:focus{
   outline: none !important;
