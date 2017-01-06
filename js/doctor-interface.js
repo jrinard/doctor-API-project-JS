@@ -6,7 +6,7 @@ var displayResults = function(results) {
     $('#result').append("<li id='doctor-list'></li>");
     for (i=0; i<results.data.length; i++){
       $('#doctor-list').append(
-        "<li>" + results.data[i].profile.first_name + " "+ results.data[i].profile.last_name +  " "+ results.data[i].profile.first_name +"</li>");
+        "<li class='doc-box pull-left'>" + results.data[i].profile.first_name + " "+ results.data[i].profile.last_name +  " "+ results.data[i].specialties[0].name +"</li>");
     } //for end
   } else {
     $('#result').html("<h4>No results found for that medical issue.</h4>");

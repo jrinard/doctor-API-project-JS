@@ -2,25 +2,36 @@
 $gray : #d3d3d3;
 $green : #39ac39;
 $white : #fff;
-
-.box {
-  background: $gray;
-  border: 3px solid black thin;
-  padding: 30px 60px;
-  border-radius: 15px;
-  .button {
-    text-align: center;
-    background: $green;
-    color: white;
-    border-radius: 10px;
-  }
-}
 .green {
   color: $green;
 }
 .white {
   color: $white;
 }
+
+.box {
+  background: $gray;
+  border: 3px solid black thin;
+  padding: 30px 60px;
+  border-radius: 15px;
+}
+
+.box-clear {
+  border: 3px solid black thin;
+  padding: 30px 60px;
+  border-radius: 15px;
+}
+
+.doc-box {
+  height: 300px;
+  width: 205px;
+  background-color: $white;
+  border-radius: 15px;
+  padding:10px;
+  margin: 5px;
+
+}
+
 
 * {
   margin: 0;
@@ -70,6 +81,10 @@ span.h3 {
 li {
   list-style-type: none;
 }
+
+
+
+
 
 /*Alters Focus on button and input*/
 button:focus{
