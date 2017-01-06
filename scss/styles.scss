@@ -1,0 +1,98 @@
+
+
+$gray : #d3d3d3;
+$green : #39ac39;
+$white : #fff;
+
+.box {
+  background: $gray;
+  border: 3px solid black thin;
+  padding: 40px 80px;
+  border-radius: 15px;
+  .button {
+    text-align: center;
+    background: $green;
+    color: white;
+    border-radius: 10px;
+  }
+}
+
+.green {
+  color: $green;
+}
+
+.white {
+  color: $white;
+}
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-image: url();
+  background: linear-gradient(#0C78B9,#042956);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+h1, h2 {
+  color: #fff;
+}
+h3 {
+  margin-bottom: 20px;
+  color: #0C78B9;
+}
+h4 {
+  color: #665;
+}
+hr {
+  border-color: #999;
+}
+span.h3 {
+  display: inline-block;
+  font-size: .8em;
+  color: #665;
+}
+.well {
+  border-radius: 10px 10px 10px;
+  margin-bottom: 15px;
+}
+#main p {
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/*Alters Focus on button and input*/
+button:focus{
+  outline: none !important;
+  border-color: #fff;
+}
+//buttons
+.btn {
+  background: linear-gradient(to right, #004D95, #0C99B9);
+  border-color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+}
+.btn:hover{
+  background-color: #004D95;
+  border-color: #fff;
+}
+.btn:active {
+  background-color: #004D95;
+  border-color: #fff;
+}
+.btn:visited {
+  background: linear-gradient(to right, #004D95, #004D95);
+  color: #fff;
+  border-color: #fff;
+}
