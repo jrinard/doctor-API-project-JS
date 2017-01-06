@@ -6,7 +6,7 @@ $white : #fff;
 .box {
   background: $gray;
   border: 3px solid black thin;
-  padding: 40px 80px;
+  padding: 30px 60px;
   border-radius: 15px;
   .button {
     text-align: center;
@@ -15,14 +15,13 @@ $white : #fff;
     border-radius: 10px;
   }
 }
-
 .green {
   color: $green;
 }
-
 .white {
   color: $white;
 }
+
 * {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -67,6 +66,9 @@ span.h3 {
   font-style: italic;
   margin-top: 10px;
   margin-left: 10px;
+}
+li {
+  list-style-type: none;
 }
 
 /*Alters Focus on button and input*/
