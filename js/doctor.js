@@ -1,6 +1,6 @@
 var apiKey = require('./../.env').apiKey;
 
-function Doctor() {
+function Doctor(docImage) {
   var medicalIssue;
   var searchResults;
 }

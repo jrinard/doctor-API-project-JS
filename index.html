@@ -4,26 +4,30 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Raleway" rel="stylesheet">
     <title>Doctor Find</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-            <h1>Doctor Finder</h1>
-            <h2>Portland</h2>
-      </div>
+        <h1>Doctor Finder <span class ="blue2">Portland</span></h1>
 
-      <div class="box">
-      <label for="userInput">Enter Medical Issue:</label>
+      </div>
+      <div class="box pull-right">
+      <h3>Enter Medical Issue</h3>
       <input id="userInput" type="text" class="form-control"><br>
       <button class="btn white" id="input-button">Go!</button><br>
-      </div><br>
+      </div>
+
+      <div class="welcome-box">
+      <h3>Welcome</h3>
+      <p>Doctor Finder Portland helps you find 20 doctors in the Portland area based on your medical issue.</p>
+      </div>
+
       <div id="result" class="box-clear">
         <ul></ul>
       </div><br>
-      <!-- <div id="result" class="showDiv box">
-        <ul></ul>
-      </div><br> -->
+
     </div>
   </body>
 </html>

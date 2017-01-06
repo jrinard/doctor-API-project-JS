@@ -1,12 +1,23 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayResults = function(results) {
+
+
   $('#result').empty();
   if (results.data.length > 0){
     $('#result').append("<li id='doctor-list'></li>");
     for (i=0; i<results.data.length; i++){
       $('#doctor-list').append(
-        "<li class='doc-box pull-left'>" + results.data[i].profile.first_name + " "+ results.data[i].profile.last_name +  " "+ results.data[i].specialties[0].name +"</li>");
+        "<li class='doc-box pull-left'>" +
+        '<img class="doc-image" src="'+results.data[i].profile.image_url+'"/>'+'</div>'+
+        '<h4><span class="blue">'+ results.data[i].profile.first_name + " " + results.data[i].profile.last_name + '</span></h4><hr>' + " " +
+        '<h5>Speciality</h5><h4>'+ results.data[i].specialties[0].actor + '</h4><br>'+
+        '<h4>'+ results.data[i].practices[0].name + '</h4>' +
+        '<h5>'+ results.data[i].practices[0].visit_address.street + '</h5>' +
+        '<h5>'+ results.data[i].practices[0].visit_address.city + '</h5>' +
+        '<h5>'+ results.data[i].practices[0].visit_address.zip + '</h5>' +
+        '<h5>'+ results.data[i].practices[0].phones[0].number + '</h5>' +
+        "</li>");
     } //for end
   } else {
     $('#result').html("<h4>No results found for that medical issue.</h4>");
@@ -14,13 +25,15 @@ var displayResults = function(results) {
 }; //function end
 
 $(document).ready(function() {
-  document.getElementById("userInput").defaultValue = "toothache";
+  document.getElementById("userInput").defaultValue = "surgeon";
   var findDoc = new Doctor();
   $('#input-button').click(function(){
     findDoc.getDoctors($('#userInput').val(), displayResults);
   });
 });
 
+// pulls image url
+// results.data[i].profile.image_url
 
 //
 //   "data": [
