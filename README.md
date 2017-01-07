@@ -33,5 +33,6 @@ HTML, CSS, Bootstrap, JavaScript, Gulp, Bower were used in the production of thi
 
 ### License
 
+MIT License
 
 Copyright (c) 2017 Joshua Rinard
