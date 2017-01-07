@@ -12,7 +12,7 @@ Runs in Node.JS
 
 .env file will need created in the project directory with the following code inserted with your api key from https://betterdoctor.com/developers
 
-\c exports.apiKey = "INSERT_API_KEY_KEY";
+\c exports.apiKey = "INSERT_API_KEY";
 
 \c npm install
 \c bower install
